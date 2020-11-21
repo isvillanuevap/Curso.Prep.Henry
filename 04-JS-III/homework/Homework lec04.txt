@@ -1,0 +1,9 @@
+Homework Lección 4
+
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+*Arrays
+Un array, o arreglo, lo puedes asimilar a una caja en la que puedes guardar distintas cosas, en esta oportunidad, podemos guardar datos (string/texto, números y booleanos, que vimos en la primera tarea). Los datos de este arreglo se almacenan en [] y separado por comas (,). Ejemplo: const cosasDeMiDormitorio = ['Cama', 'Escritorio', 'Lampara']. En un array cada elemento tiene una posicion, comenzando por el 0:
+'Cama' está en la posición 0,
+'Escritorio' en la posición 1,
+'Lampara' en la posición 3.
