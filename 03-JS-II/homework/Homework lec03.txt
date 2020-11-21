@@ -1,0 +1,15 @@
+Homework Lección 3
+
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+*for
+Cuando estás programando, si quieres aprender una forma rápida de recorrer, por ejemplo, una lista, puedes hacerlo con el uso de los ciclos for, donde le indicas desde donde comenzar, hasta donde, de qué forma hacer el salto o paso de uno al siguiente y, por último, le defines las condiciones. Por ejemplo, si tienes una lista de números, le puedes decir que use un ciclo for para recorrer la lista, desde el comienzo hasta el final, que vaya uno por uno, pero que al llamar a cada número de la lista, lo muestre multiplicado por 2.
+
+
+*&&, ||, !
+Cuando quieras dar condiciones dentro de un código en JavaScript, puedes utilizar:
+> && : para indicar que debe cumplir la primera 'Y' la segunda (o más). Ejemplo: decirle al programa que si es Hombre Y (&&) mayor de 18 años, que muestre el mensaje: 'Hombre mayor de edad'.
+
+> || : Al igual que el ejemplo anterior, encontramos el operador lógico 'O'. Ejemplo: Si es Niña O (||) Mujer, que muestre el mensaje: 'Es de sexo femenino'.
+
+> ! : Por último, el operador NOT (!) o 'NO', es para devolver el valor contrario a lo que se le indique. Ejemplo, si le indico que algo es !false, devolverá true, ya que le estoy diciendo NO-FALSO, por ende, es Verdadero.
