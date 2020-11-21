@@ -1,0 +1,30 @@
+Homework 1.1
+
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+*Variables
+Una variable es una palabra que te sirve para identificar algo, ya sea un texto, número, boolean (explicado más adelante) o función, como "nombre" o "edad", ya que siempre se llama igual, pero va cambiando dependiendo de cada niño. Por ejemplo: "nombre" = "Sebastian", "edad" = 31, o también "nombre" = "Alonso", "edad" = 11.
+
+
+*Strings
+Un string puede ser una palabra o una cadena de texto (frase), ya sea "helado" o "me gusta el helado de chocolate".
+
+
+*Funciones (argumentos, `return`)
+Para no repetir código puedes utilizar una función. Por ejemplo, si llegas a tu salón y tuvieses que hacer una línea de código por cada compañero que debes saludar (console.log("Hola Alonso!"), console.log("Hola Sebastián!"), etc), mejor hacer una función en la que el saludo ya esté pre-formateado y solamente cambie dependiendo del nombre de tu compañero:
+
+function saludar(nombre){
+	console.log("Hola " + nombre + "!")
+}
+
+
+*Declaraciones `if`
+Recuerdas cuando pides algo de regalo y tus padres te dicen: "Si te sacas notas sobre 6 te lo regalamos"? (en Chile las notas van de 1 a 7) Bueno, eso es una declaración "if", que significa "si", pero un SI de condición, ejemplo:
+
+if (nota > 6) {
+	obtienes el regalo
+}
+
+
+*Valores booleanos (`true`, `false`)
+Los booleanos representan dos posibles valores: true / false (verdadero / falso). Al igual que en los exámenes cuando tienes que decir si un cálculo matemático o una frase cumplen y debes poner verdadero o falso, lo mismo puedes hacer en programación, para verificar información o para validar una condición en una declaración if. Ejemplo: si quieres hacer algo solamente si te dicen que le gusta helado: gustaHelado = true, y luego continuar con la condición o el resto del código.
