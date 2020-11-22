@@ -1,0 +1,24 @@
+Homework Lección 7
+
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+
+*Funciones Callback
+En palabras simples, es usar una función dentro de una función. Ya hemos visto como se definen/crean las funciones. Al usar Callbacks, por convención, lo hacemos con la abreviación cb. Estas funciones pueden ser usadas en cualquier momento. Ejemplo:
+
+function apruebaCurso(alumno){
+	return alumno + ' APRUEBA el Curso, felicitaciones!'
+}
+
+function repruebaCurso(alumno){
+	return alumno + ' REPRUEBA el Curso, debe repetirlo.'
+}
+
+function resultadoCurso(alumno, cb){
+	return cb(alumno)
+}
+
+Si queremos, podemos definir que para los alumnos que tengan sobre cierta norta, se utilice la función apruebaCurso, el ejemplo quedaría con la siguiente respuesta:
+
+> resultadoCurso('Alonso', apruebaCurso)
+'Alonso APRUEBA el Curso, felicitaciones!'
