@@ -1,0 +1,54 @@
+Homework Lección 5
+
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+*Objetos
+En la tarea anterior definimos un Array, donde dijimos que era similar a una caja que contenía distintas cosas, pudiendo tener texto, números y booleanos, al igual que los array, pero además tener array, una función u otro objeto dentro. La diferencia es que, para definir un objeto, se hace con identificadores, es decir, con el formato de "claves: valores", por ejemplo:
+
+const alumno1 = {
+	nombre: 'Alonso'
+	apellido: 'Villanueva'
+	edad: 11
+	esAlumno: true
+}
+
+
+*Propiedades
+Una propiedad sería, en palabras simples, el nombre asignado a una palabra clave (key), siguendo el ejemplo anterior, la propiedad edad tiene asignado el valor (value) 11, es decir, alumno1 tiene 11 años.
+
+
+*Métodos
+Dentro de un objeto podemos definir un método, que sería una función. De forma simple, pordemos agregar al objeto alumno1, un método/función que sea saludarAlumno.
+
+const alumno1 = {
+	nombre: 'Alonso',
+	apellido: 'Villanueva',
+	edad: 11,
+	esAlumno: true,
+	saludarAlumno: function(){
+		console.log('Hola, ' + this.nombre + '!')
+	}
+
+}
+
+Nota: usamos la palabra clave 'this' dentro de la función saludarAlumno para indicar que se refiere a ESTE.nombre, haciendo referencia al valor nombre que está dentro de ese Objeto.
+
+
+*Bucle for…in
+Así como aprendimos a recorrer con el ciclo for, en esta oportunidad, para recorrer un objeto, se debe hacer en base a sus claves, para eso de modifica nuestro for y se agrega la palabra clave in (en), con la cual busca dentro de un objeto. Ejemplo:
+
+for (let key in alumno1){
+	console.log(alumno1[key])
+}
+
+Con eso nos mostrará los valores asignados a cada clave en una línea distinta.
+
+
+
+*Notación de puntos vs notación de corchetes
+Si quieres llamar a un valor dentro de un objeto tienes dos notaciones distintas con las que puedes hacerlo. Siguiente el ejemplo de alumno1, si queremos ver el nombre de ese alumno, puede hacerse de las siguientes formas:
+
+>alumno1.nombre //'Alonso'
+>alumno1['nombre'] //'Alonso'
+
+En la notación de puntos se escribe el nombre del objeto, seguido de un punto, y finalmente el nombre de la clave de la cual queremos conocer el valor. En el de la notación de corchetes se usa sin el punto, pero con el nombre de la clave dentro de corchetes y comillas.
