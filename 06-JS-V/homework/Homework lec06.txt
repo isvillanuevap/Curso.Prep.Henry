@@ -1,0 +1,32 @@
+Homework Lección 5
+
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+
+*Prototype
+Como vimos previamente, podemos agregar funciones a nuestro código (métodos). Cuando hablamos de una función a prototype, en palabras simples, es agregar una funcion al 'corazón' (core) de un objeto. Dicha función solamente podrá ser usada dentro de ese objeto. 
+
+
+*Constructors (de Clases)
+Hablábamos en lecciones previas sobre los Objetos, que actuan como plantillas donde puedo poner definir algo con distintas propiedades. Ahora, si vamos a estar definiendo objetos repetitivamente, podemos crear una plantilla de plantillas, ejemplo, una plantilla para crear alumnos de una sala de clases, donde después llamamos a ESA plantilla para generar un nuevo alumno. A esa plantilla genérica le llamamos Constructor. Ejemplo
+
+function Alumno(nombre, apellido, edad, curso){
+	this.nombre = nombre;
+	this.apellido = apellido;
+	this.edad = edad;
+	this.curso = curso;
+}
+
+Con este constructor podemos crear alumnos de cualquier curso, ejemplo:
+
+const alonso = new Alumno('Alonso', 'Villanueva', 11, '5to de Primaria');
+
+Al llamar al objeto creado, alonso, veremos lo siguiente:
+
+>alonso
+Alumno {
+  nombre: 'Alonso',
+  apellido: 'Villanueva',
+  edad: 11,
+  curso: '5to de Primaria'
+}
